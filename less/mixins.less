@@ -1,1 +1,25 @@
 // Mixins Here
+.flexCenter() {
+    display: flex;
+    justify-content: center;
+}
+
+.bgColor() {
+    background-color: @nav-bg;
+}
+
+.customBtn(@bg-color:#22283A, @font-color:#F6F7F8, @width:10rem) {
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: 1.75rem;
+    padding: 2.25% 0% 1.5% 6%;
+    width: @width;
+    height: 3.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+}
